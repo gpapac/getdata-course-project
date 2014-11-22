@@ -12,7 +12,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
 
 ##Description of the transformed datasets:
-Each of the tidy_data and tidy_mean_data data frames have 81 variables.
+Each of the final_data and final_mean_data data frames have 81 variables.
 
 The steps that were followed to create these data sets are the following:
 1. The training and the test sets were merged to create one data set.
@@ -27,7 +27,7 @@ The first 2 variables in both data sets are:
 * subject_id: (int) the id of the subject. Values: 1-30 corresponding to the id of each of the 30 volunteers that took part in the experiments.
 
 The rest 79 of the variables are the mean and standard deviation of various measurements collected during the experiments for each activity and volunteer (only the mean and standard deviation of the measurements were required for this course project).
-The **tidy_mean_data** contains the average of each variable for each activity and each subject.
+The **final_mean_data** contains the average of each variable for each activity and each subject.
 
 These measurements come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
